@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MealAI
+{% endblock %}
+
+{% block main %}
+    <div id="hero" width="100%">
+        <div class="hero-text-title">
+            <span>Get a personalized plan</span>
+        </div>
+        <div class="hero-text-content">
+            <span>Complete this quick form and make dieting easy and fun</span>
+        </div>
+        <form action="/plan">
+            <button type="submit" class="btn btn-success call-to-action">Start NOW</button>
+        </form>
+    </div>
+
+    <div class="steps-element-container">
+        <div class="step-container">
+            <h2>Step 1</h2>
+            <h4>Fill out our form</h4>
+            <p>Let tell us what you are looking for and we will use that information to make best possible diet for your situation</p>
+        </div>
+
+        <div class="step-container">
+            <h2>Step 2</h2>
+            <h4>Fill out our form</h4>
+            <p>Let tell us what you are looking for and we will use that information to make best possible diet for your situation</p>
+        </div>
+
+        <div class="step-container">
+            <h2>Step 3</h2>
+            <h4>Fill out our form</h4>
+            <p>Let tell us what you are looking for and we will use that information to make best possible diet for your situation</p>
+        </div>
+    </div>
+
+    <div id="reviewCarousel" class="carousel slide reviews-element-container" data-bs-ride="true">
+
+        <div class="reviews-element-title">
+            <span>See what other think</span>
+        </div>
+
+        <div id="carousel-inner" class="carousel-inner">
+        </div>
+        <button class="carousel-control-prev carousel-prev" onClick="moveSlideButton(false)" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon argarg" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" onClick="moveSlideButton(true)" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="info-element-container">
+        <div class="info-image">
+            <img src="/static/Food.png" alt="AAAAAAAA">
+        </div>
+
+        <div class="info-text">
+            <div>
+                <h1 class="info-text-header">How It Works</h1>
+            </div>
+            <div class="info-text-main">
+                <h2>We use modern AI technology that can take into account all the requests of our users. Our service is mostly very accurate but due to the limitations of modern AI it is possible that sometimes our system might produce inaccurate information.</h2>
+            </div>
+        </div>
+
+        <script src="/static/index.js"></script>
+{% endblock %}
