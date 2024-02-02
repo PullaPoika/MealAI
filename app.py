@@ -7,7 +7,7 @@ import random
 
 app = Flask(__name__)
 client = OpenAI(
-    api_key="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",
+    api_key="Enter own KEY",
 )
 
 # Configure session to use filesystem (instead of signed cookies)
