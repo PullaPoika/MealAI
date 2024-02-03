@@ -1,0 +1,399 @@
+.call-to-action {
+    margin: 25px;
+    width: 15%;
+    min-width: 100px;
+    height: 60px;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url('arrow-left-3099.png') !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url('arrow-right-3098.png') !important;
+}
+
+#baseForm {
+    margin: auto;
+    width: 65%;
+}
+
+.footer {
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    border-color: red;
+}
+
+.form-title {
+    margin: 40px auto;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 50%;
+}
+
+.form-container>input {
+    width: 100%;
+    background: #D9D9D9;
+    border-radius: 16px;
+    height: 3rem;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.form-container>input.invalid {
+    background-color: #dc3545;
+}
+
+#hero {
+    background-repeat: no-repeat;
+    border-color: black;
+    text-align: center;
+    height: 700px;
+}
+
+.hero-text-content {
+    font-size: 3vw;
+    font-weight: 200;
+    padding: 10px;
+    color: #119A3B;
+}
+
+.hero-text-title {
+    font-size: 8vw;
+    font-weight: bold;
+    padding: 70px;
+    color: #119A3B;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-element-container {
+    padding: 100px 50px;
+    height: 55%;
+    width: 100%;
+    background-color: #DEE5DC;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.info-image>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.info-text {
+    color: black;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.info-text-header {
+    font-size: 5vw;
+    margin: 0 0 20px;
+}
+
+.info-text-main {
+    font-size: 25px;
+}
+
+.leave-review-btn {
+    margin: auto;
+}
+
+#manual-search-container {
+    margin: 50px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 50px 30px;
+    grid-template-columns: 70% 20% 10%;
+}
+
+.manual-search-input-container>input {
+    width: 100%;
+}
+
+.plan-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.plan-carousel {
+    margin: 0 0 40px 0;
+}
+
+.plan-carusel-item {
+    margin: auto;
+    border-color: red;
+}
+
+.plan-carusel-item>* {
+    width: 100%;
+}
+
+.plan-day-title {
+    text-align: center;
+}
+
+.plan-page-title {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    font-size: 5vw;
+    margin: 50px 0 100px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+/* Star review code from https://codepen.io/hesguru/pen/BaybqXv*/
+
+.reviews-element-container {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.reviews-element-title {
+    font-size: 4vw;
+    margin: 50px;
+}
+
+.review-form {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.review-form>textarea,
+input,
+label {
+    width: 70%;
+}
+
+.review-form>#content {
+    height: 200px;
+    padding: 0.4em;
+    text-align: left;
+}
+
+.shopping-list-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+}
+
+#shopping-list>li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shopping-list>li> :nth-child(2) {
+    justify-self: end;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.step-container {
+    text-align: center;
+    padding: 10px 90px;
+}
+
+.steps-element-container {
+    padding: 100px 50px;
+    height: 25%;
+    width: 100%;
+    background-color: #DEE5DC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+
+.remove-button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+
+.remove-button,
+button span {
+    transition: 200ms;
+}
+
+.remove-button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.remove-button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-button svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.remove-button:hover {
+    background: #ff3636;
+}
+
+.remove-button:hover .text {
+    color: transparent;
+}
+
+.remove-button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.remove-button:focus {
+    outline: none;
+}
+
+.remove-button:active .icon svg {
+    transform: scale(0.8);
+}
